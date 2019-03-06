@@ -15,16 +15,16 @@ var INCHES = readInt("How many inches are in addition to this height? ");
 
 //Starts the program
 function start(){
-	convertHeightToMeters(feet, inches);
+	convertHeightToMeters(FEET, INCHES);
 }
 
 //FUnction that has all the functional code
 function convertHeightToMeters(feet, inches){
-    //Updates the INCHES variable by multiplying the FEET variable by the FEET_TO_INCHES variable and adding the original INCHES variable
-    INCHES = FEET * FEET_TO_INCHES + INCHES;
-    //Converts inches into cm using the INCHES_TO_CM variable
-    var cm = INCHES * INCHES_TO_CM;
-    //Converts cm to meters using the CM_TO_METERS variable 
-    var meter = cm * CM_TO_METERS;
-    println(meter);
+	//Updates the INCHES variable by multiplying the FEET variable by the FEET_TO_INCHES variable and adding the original INCHES variable
+    	INCHES = FEET * FEET_TO_INCHES + INCHES;
+	//Converts inches into cm using the INCHES_TO_CM variable
+    	var cm = INCHES * INCHES_TO_CM;
+    	//Converts cm to meters using the CM_TO_METERS variable 
+    	var meter = cm * CM_TO_METERS;
+    	println(meter);
 }
